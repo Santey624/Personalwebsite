@@ -110,6 +110,15 @@ function JsonLd() {
     description,
     email: siteConfig.email,
     nationality: "Nepalese",
+    knowsLanguage: [
+      { "@type": "Language", name: "English" },
+      { "@type": "Language", name: "Nepali" },
+      {
+        "@type": "Language",
+        name: "Japanese",
+        alternateName: "JLPT N4 · preparing for N3 by 2027",
+      },
+    ],
     homeLocation: {
       "@type": "Place",
       name: "Osaka, Japan",

@@ -60,7 +60,8 @@ export function Hero() {
           </p>
 
           <p className="text-sm text-slate-500 mb-3">
-            {siteConfig.location} · Open to collaborations in Japan
+            {siteConfig.location} · Open to collaborations in Japan · JLPT N4 → N3
+            (2027)
           </p>
 
           <p className="text-base text-blue-700 font-medium mb-6 italic">

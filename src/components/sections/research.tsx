@@ -36,9 +36,18 @@ export function Research() {
           <p className="text-slate-600 leading-relaxed text-base max-w-3xl mx-auto text-center mb-6">
             {siteConfig.researchStatement}
           </p>
-          <p className="text-slate-500 leading-relaxed text-sm max-w-2xl mx-auto text-center mb-14">
+          <p className="text-slate-500 leading-relaxed text-sm max-w-2xl mx-auto text-center mb-8">
             {siteConfig.personalInterests}
           </p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 max-w-2xl mx-auto mb-14 text-sm text-slate-600">
+            {siteConfig.languages.map((lang) => (
+              <p key={lang.name}>
+                <span className="font-semibold text-slate-800">{lang.name}</span>
+                <span className="text-slate-400"> · </span>
+                <span className="text-slate-500">{lang.level}</span>
+              </p>
+            ))}
+          </div>
         </FadeIn>
 
         <StaggerContainer className="grid sm:grid-cols-2 gap-5">
