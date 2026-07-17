@@ -19,9 +19,9 @@ import {
 } from "@/components/sections/skills-projects-context";
 
 function skillSizeClass(level: Skill["level"]) {
-  if (level === 3) return "text-sm px-3.5 py-2 font-semibold";
-  if (level === 2) return "text-sm px-3 py-1.5 font-medium";
-  return "text-xs px-2.5 py-1 font-medium";
+  if (level === 3) return "text-sm min-h-11 px-3.5 py-2.5 font-semibold";
+  if (level === 2) return "text-sm min-h-10 px-3 py-2 font-medium";
+  return "text-xs min-h-9 px-2.5 py-1.5 font-medium";
 }
 
 export function Skills() {
@@ -215,7 +215,7 @@ export function Skills() {
               <button
                 type="button"
                 onClick={clearSelection}
-                className="shrink-0 text-sm text-slate-500 hover:text-slate-900 underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 rounded"
+                className="shrink-0 min-h-11 px-2 text-sm text-slate-500 hover:text-slate-900 underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 rounded-lg"
               >
                 Clear
               </button>
@@ -248,7 +248,7 @@ function FilterChip({
       aria-pressed={active}
       onClick={onClick}
       className={[
-        "px-3.5 py-1.5 rounded-lg text-sm font-medium transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900",
+        "min-h-11 px-3.5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900",
         active
           ? primary
             ? "bg-slate-900 text-white"

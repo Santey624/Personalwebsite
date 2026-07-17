@@ -77,7 +77,7 @@ export function Publications() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Read "${pub.title}" (opens in new tab)`}
-                        className="p-1.5 text-slate-400 hover:text-blue-700 transition-colors"
+                        className="inline-flex items-center justify-center min-h-11 min-w-11 text-slate-400 hover:text-blue-700 transition-colors rounded-lg"
                       >
                         <ExternalLink size={16} aria-hidden="true" />
                       </a>

@@ -130,7 +130,7 @@ export default function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
-            className="md:hidden text-slate-700 hover:text-slate-900 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 rounded p-1"
+            className="md:hidden inline-flex items-center justify-center min-h-11 min-w-11 text-slate-700 hover:text-slate-900 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 rounded-lg"
           >
             {isOpen ? (
               <X size={22} aria-hidden="true" />
@@ -146,11 +146,11 @@ export default function Navbar() {
         role="menu"
         aria-hidden={!isOpen}
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul
-          className="bg-white border-t border-slate-100 px-6 py-4 space-y-4"
+          className="bg-white border-t border-slate-100 px-6 py-3 space-y-0.5"
           role="list"
         >
           {SECTION_LINKS.map(({ label, href, id }) => {
@@ -162,7 +162,7 @@ export default function Navbar() {
                   href={href}
                   onClick={(e) => handleSectionClick(e, id)}
                   aria-current={isActive ? "page" : undefined}
-                  className={`text-sm font-medium w-full text-left block transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 rounded ${
+                  className={`text-sm font-medium w-full text-left min-h-11 flex items-center px-1 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 rounded-lg ${
                     isActive
                       ? "text-slate-900"
                       : "text-slate-500 hover:text-slate-900"
