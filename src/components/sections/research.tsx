@@ -33,8 +33,11 @@ export function Research() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <p className="text-slate-600 leading-relaxed text-base max-w-3xl mx-auto text-center mb-14">
+          <p className="text-slate-600 leading-relaxed text-base max-w-3xl mx-auto text-center mb-6">
             {siteConfig.researchStatement}
+          </p>
+          <p className="text-slate-500 leading-relaxed text-sm max-w-2xl mx-auto text-center mb-14">
+            {siteConfig.personalInterests}
           </p>
         </FadeIn>
 

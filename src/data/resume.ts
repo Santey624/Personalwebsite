@@ -57,6 +57,7 @@ export interface ResearchProject {
   featured?: boolean;
   githubUrl?: string;
   paperUrl?: string;
+  liveUrl?: string;
 }
 
 export interface Skill {
@@ -116,6 +117,8 @@ export const siteConfig = {
   location: "Osaka, Japan",
   collaborationNote:
     "Based in Osaka and open to research collaborations across Japan.",
+  personalInterests:
+    "Outside research, I love playing football, watching movies and series, and following the beautiful game — a big-time Manchester City supporter.",
   photo: "/santoshimage.png",
   cvUrl: "/cv.pdf",
   hasCv: false,
@@ -126,7 +129,7 @@ export const siteConfig = {
   googleScholarUrl: "",
   orcidUrl: "",
   researchStatement:
-    "I am an AI Engineer and NLP Researcher at Doshisha University, currently living in Osaka, Japan, and working in the Co-Creation Informatics Laboratory (CCILAB) under Prof. Shirahama. My research centers on NLP, low-resource languages, multilingual models, medical AI, and AI safety — from Japanese–Nepali clinical summarization and diffusion-based sensing to LLM-as-a-Judge evaluation for reliable agents. With industry experience building production multi-agent systems, I combine research rigor with real-world scalability. I am actively seeking PhD opportunities and research collaborations in Japan across AI/ML, NLP, and data science at the intersection of healthcare and intelligent systems.",
+    "I am Santosh Gaire Sharma, an AI Engineer and NLP Researcher at Doshisha University, currently living in Osaka, Japan, and working in the Co-Creation Informatics Laboratory (CCILAB) under Prof. Shirahama. My research centers on NLP, low-resource languages, multilingual models, medical AI, and AI safety — from Japanese–Nepali clinical summarization and diffusion-based sensing to LLM-as-a-Judge evaluation for reliable agents. With industry experience building production multi-agent systems and products like GharKatha (gharkatha.com), I combine research rigor with real-world scalability. I am actively seeking PhD opportunities and research collaborations in Japan across AI/ML, NLP, and data science at the intersection of healthcare and intelligent systems.",
 } as const;
 
 // ─── Research Interests ──────────────────────────────────────────────────────
@@ -431,6 +434,28 @@ export const researchProjects: ResearchProject[] = [
     status: "research",
     githubUrl: "https://github.com/Santey624/Doshisha_logo_detection",
   },
+  {
+    id: "proj-gharkatha",
+    title: "GharKatha",
+    description:
+      "Smart rental management platform for Nepal — landlords and tenants manage buildings and units, generate Nepali-calendar invoices, track rent and electricity payments (eSewa / Khalti / bank), and handle maintenance requests in one place.",
+    tools: ["Next.js", "TypeScript", "React", "Node.js", "PostgreSQL"],
+    domains: ["engineering", "infra"],
+    relatedSkillIds: [
+      "typescript",
+      "nextjs",
+      "react",
+      "nodejs",
+      "sql",
+      "postgres",
+      "vercel",
+    ],
+    outcome: "Live · gharkatha.com",
+    status: "production",
+    featured: true,
+    githubUrl: "https://github.com/Santey624/houserentalbillingapp",
+    liveUrl: "https://gharkatha.com",
+  },
 ];
 
 // ─── Skills ──────────────────────────────────────────────────────────────────
@@ -661,28 +686,28 @@ export const skills: Skill[] = [
     name: "TypeScript",
     domain: "engineering",
     level: 2,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
   {
     id: "nextjs",
     name: "Next.js",
     domain: "engineering",
     level: 2,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
   {
     id: "react",
     name: "React",
     domain: "engineering",
     level: 2,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
   {
     id: "nodejs",
     name: "Node.js",
     domain: "engineering",
     level: 2,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
   {
     id: "fastapi",
@@ -703,7 +728,7 @@ export const skills: Skill[] = [
     name: "SQL",
     domain: "engineering",
     level: 2,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
   {
     id: "leaflet",
@@ -732,7 +757,7 @@ export const skills: Skill[] = [
     name: "PostgreSQL",
     domain: "infra",
     level: 2,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
   {
     id: "linux",
@@ -760,7 +785,7 @@ export const skills: Skill[] = [
     name: "Vercel",
     domain: "infra",
     level: 1,
-    relatedProjectIds: [],
+    relatedProjectIds: ["proj-gharkatha"],
   },
 ];
 

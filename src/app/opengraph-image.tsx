@@ -58,13 +58,13 @@ export default function OpenGraphImage() {
               lineHeight: 1.1,
             }}
           >
-            {siteConfig.name}
+            Santosh Gaire Sharma
           </div>
           <div style={{ fontSize: 28, color: "#93c5fd", fontWeight: 500 }}>
-            {siteConfig.title}
+            AI Engineer & NLP Researcher · Osaka, Japan
           </div>
-          <div style={{ fontSize: 22, color: "#94a3b8", maxWidth: 800 }}>
-            NLP · Data Science · Agentic AI · Healthcare AI · Doshisha University
+          <div style={{ fontSize: 22, color: "#94a3b8", maxWidth: 900 }}>
+            Official site · NLP · Medical AI · AI Safety · GharKatha · Doshisha University
           </div>
         </div>
       </div>
