@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const description = `Official personal website of Santosh Gaire Sharma — AI Engineer & NLP Researcher at Doshisha University (Osaka, Japan). Research in NLP, low-resource languages, multilingual models, medical AI, and AI safety. Builder of GharKatha (gharkatha.com).`;
+const description = `Official personal website of Santosh Gaire Sharma — AI Engineer & NLP Researcher at Doshisha University (Osaka, Japan) and member of LLM-jp (NII). Research in NLP, low-resource languages, multilingual models, medical AI, and AI safety. Builder of GharKatha (gharkatha.com).`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -41,6 +41,8 @@ export const metadata: Metadata = {
     "multilingual models",
     "medical AI",
     "AI safety",
+    "LLM-jp",
+    "Japanese LLM",
     "NepMedJP",
     "GharKatha",
     "gharkatha.com",
@@ -86,6 +88,7 @@ function JsonLd() {
     siteConfig.githubUrl,
     siteConfig.linkedinUrl,
     "https://gharkatha.com",
+    "https://llm-jp.nii.ac.jp/en/home-en/",
     siteConfig.googleScholarUrl,
     siteConfig.orcidUrl,
   ].filter(Boolean);
@@ -128,9 +131,23 @@ function JsonLd() {
         name: "Tribhuvan University",
       },
     ],
-    affiliation: {
-      "@type": "CollegeOrUniversity",
-      name: "Doshisha University",
+    affiliation: [
+      {
+        "@type": "CollegeOrUniversity",
+        name: "Doshisha University",
+      },
+      {
+        "@type": "Organization",
+        name: "LLM-jp",
+        url: "https://llm-jp.nii.ac.jp/en/home-en/",
+        description:
+          "Cross-organizational project for open Japanese large language model research and development, organized by NII.",
+      },
+    ],
+    memberOf: {
+      "@type": "Organization",
+      name: "LLM-jp",
+      url: "https://llm-jp.nii.ac.jp/en/home-en/",
     },
     worksFor: {
       "@type": "CollegeOrUniversity",
@@ -141,6 +158,8 @@ function JsonLd() {
       "Natural Language Processing",
       "Low-resource languages",
       "Multilingual models",
+      "Japanese large language models",
+      "LLM-jp",
       "Medical AI",
       "AI Safety",
       "Cross-lingual summarization",

@@ -113,7 +113,7 @@ export const siteConfig = {
   name: "Santosh Gaire Sharma",
   title: "AI Engineer & NLP Researcher",
   tagline:
-    "Bridging Academic Research & Production-Ready AI | Agentic AI, LLMs, Healthcare NLP",
+    "Bridging Academic Research & Production-Ready AI | Agentic AI, LLMs, Healthcare NLP | LLM-jp Member",
   location: "Osaka, Japan",
   collaborationNote:
     "Based in Osaka and open to research collaborations across Japan.",
@@ -129,7 +129,7 @@ export const siteConfig = {
   googleScholarUrl: "",
   orcidUrl: "",
   researchStatement:
-    "I am Santosh Gaire Sharma, an AI Engineer and NLP Researcher at Doshisha University, currently living in Osaka, Japan, and working in the Co-Creation Informatics Laboratory (CCILAB) under Prof. Shirahama. My research centers on NLP, low-resource languages, multilingual models, medical AI, and AI safety — from Japanese–Nepali clinical summarization and diffusion-based sensing to LLM-as-a-Judge evaluation for reliable agents. With industry experience building production multi-agent systems and products like GharKatha (gharkatha.com), I combine research rigor with real-world scalability. I am actively seeking PhD opportunities and research collaborations in Japan across AI/ML, NLP, and data science at the intersection of healthcare and intelligent systems.",
+    "I am Santosh Gaire Sharma, an AI Engineer and NLP Researcher at Doshisha University, currently living in Osaka, Japan, and working in the Co-Creation Informatics Laboratory (CCILAB) under Prof. Shirahama. I am also a member of LLM-jp, the National Institute of Informatics community developing open Japanese large language models. My research centers on NLP, low-resource languages, multilingual models, medical AI, and AI safety — from Japanese–Nepali clinical summarization and diffusion-based sensing to LLM-as-a-Judge evaluation for reliable agents. With industry experience building production multi-agent systems and products like GharKatha (gharkatha.com), I combine research rigor with real-world scalability. I am actively seeking PhD opportunities and research collaborations in Japan across AI/ML, NLP, and data science at the intersection of healthcare and intelligent systems.",
 } as const;
 
 // ─── Research Interests ──────────────────────────────────────────────────────
@@ -151,7 +151,7 @@ export const researchInterests: ResearchInterest[] = [
     id: "multilingual",
     title: "Multilingual Models",
     description:
-      "Fine-tuning and adapting multilingual transformers (e.g. mT5) for cross-lingual generation, summarization, and transfer across Japanese, Nepali, and English.",
+      "Fine-tuning and adapting multilingual transformers (e.g. mT5) and engaging with open Japanese LLM development through LLM-jp for cross-lingual generation, summarization, and transfer across Japanese, Nepali, and English.",
   },
   {
     id: "medical-ai",
@@ -241,6 +241,18 @@ export const experience: ExperienceEntry[] = [
     highlights: [
       "Researching human activity recognition by imputing missing modalities with a diffusion model",
       "Developing cross-lingual summarization systems for Japanese–Nepali medical text generation",
+    ],
+    type: "research",
+  },
+  {
+    id: "exp-llmjp",
+    role: "Member",
+    organization: "LLM-jp (NII)",
+    location: "Japan",
+    period: "Present",
+    highlights: [
+      "Member of LLM-jp, the National Institute of Informatics community for open Japanese large language model research and development",
+      "Engaging with cross-organizational work on Japanese LLMs, corpora, evaluation, and open releases for academia and industry",
     ],
     type: "research",
   },
