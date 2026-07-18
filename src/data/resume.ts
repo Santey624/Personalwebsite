@@ -111,7 +111,7 @@ export const DOMAIN_ORDER: SkillDomain[] = [
 
 export const siteConfig = {
   name: "Santosh Gaire Sharma",
-  title: "AI Engineer & NLP Researcher",
+  title: "AI Engineer & NLP Researcher · Master's Student, ISTC",
   tagline:
     "Bridging Academic Research & Production-Ready AI | Agentic AI, LLMs, Healthcare NLP | LLM-jp Member",
   location: "Osaka, Japan",
@@ -143,7 +143,7 @@ export const siteConfig = {
   googleScholarUrl: "",
   orcidUrl: "",
   researchStatement:
-    "I am Santosh Gaire Sharma, an AI Engineer and NLP Researcher at Doshisha University, currently living in Osaka, Japan, and working in the Co-Creation Informatics Laboratory (CCILAB) under Prof. Shirahama. I am also a member of LLM-jp, the National Institute of Informatics community developing open Japanese large language models. My research centers on NLP, low-resource languages, multilingual models, medical AI, and AI safety — from Japanese–Nepali clinical summarization and diffusion-based sensing to LLM-as-a-Judge evaluation for reliable agents. I am currently at JLPT N4 and preparing for the JLPT N3 examination by 2027 to deepen Japanese for research and collaboration. With industry experience building production multi-agent systems and products like GharKatha (gharkatha.com), I combine research rigor with real-world scalability. I am actively seeking PhD opportunities and research collaborations in Japan across AI/ML, NLP, and data science at the intersection of healthcare and intelligent systems.",
+    "I am Santosh Gaire Sharma, an AI Engineer and NLP Researcher at Doshisha University, and a Master's student currently studying at ISTC, Doshisha University. I live in Osaka, Japan, and work in the Co-Creation Informatics Laboratory (CCILAB) under Prof. Shirahama. I am also a member of LLM-jp, the National Institute of Informatics community developing open Japanese large language models. My research centers on NLP, low-resource languages, multilingual models, medical AI, and AI safety — from Japanese–Nepali clinical summarization and diffusion-based sensing to LLM-as-a-Judge evaluation for reliable agents. I am currently at JLPT N4 and preparing for the JLPT N3 examination by 2027 to deepen Japanese for research and collaboration. With industry experience building production multi-agent systems and products like GharKatha (gharkatha.com), I combine research rigor with real-world scalability. I am actively seeking PhD opportunities and research collaborations in Japan across AI/ML, NLP, and data science at the intersection of healthcare and intelligent systems.",
 } as const;
 
 // ─── Research Interests ──────────────────────────────────────────────────────
@@ -209,7 +209,7 @@ export const education: EducationEntry[] = [
     id: "edu-masters",
     degree: "Master's Program",
     field: "Information and Computer Science",
-    university: "Doshisha University",
+    university: "ISTC, Doshisha University",
     location: "Kyoto, Japan",
     period: "Sep 2025 – Sep 2027",
     lab: "Co-Creation Informatics Laboratory (CCILAB), Prof. Shirahama",

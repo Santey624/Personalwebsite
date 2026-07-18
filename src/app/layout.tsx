@@ -20,8 +20,8 @@ const description = `Official personal website of Santosh Gaire Sharma — AI En
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Santosh Gaire Sharma | AI Engineer & NLP Researcher — Official Site",
-    template: `%s | Santosh Gaire Sharma`,
+    default: "santoshgairesharma",
+    template: `%s | santoshgairesharma`,
   },
   description,
   applicationName: "Santosh Gaire Sharma",
